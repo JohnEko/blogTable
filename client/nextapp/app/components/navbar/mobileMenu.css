@@ -1,0 +1,37 @@
+.mobile-item{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5px;
+    cursor: pointer;
+
+}
+
+.mobile-menu{
+    width: 35px;
+    height: 5px;
+    background: blue;
+    border-radius: 0.25rem;
+    
+/* rounded is border-radius */
+}
+
+.mobile-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 6rem;
+    width: 100%;
+    height: calc(100vh - 94px);
+    background: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+    gap: 2rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-overflow: ellipsis;
+    z-index: 10;
+}
+
