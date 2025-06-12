@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 6rem;
+    background-color: aqua;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: small;
+    color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+}
