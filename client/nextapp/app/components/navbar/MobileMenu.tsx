@@ -10,7 +10,7 @@ const MobileMenu = () => {
     const[isOpen, setIsopen] = useState(false)
 
   return (
-    <div className=''>
+    <div className='mobile-icon'>
         
         <div className='mobile-item' 
         onClick={() => setIsopen((prev) =>!prev)}
@@ -22,7 +22,8 @@ const MobileMenu = () => {
             <div className='mobile-menu'/>
             <div className='mobile-menu'/>  
         
-            {/* <div className={`mobile-menu ${isOpen ? "rotate-45": "" }`}/> */}
+            {/* <div className={`mobile-menu ${isOpen ? "rotate-45": "" }
+             origin-left for 1 first and last menu`}/> for meddle menu "" */}
         
     
         </div>

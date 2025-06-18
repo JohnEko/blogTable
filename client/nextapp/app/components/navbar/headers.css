@@ -6,8 +6,61 @@
     background-color: aqua;
 }
 
+.image-link{
+    display: inline-flex;
+    gap: .2rem;
+    
+}
+
+.link-item{
+    display: flex;
+    gap: 1rem;
+    padding: 2px;
+}
+
 .logo{
     font-weight: bold;
     font-size: small;
+    padding: 0.2rem;
     color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+}
+
+.image-logo{
+    display: flex;
+    align-items: center;
+    border-radius: 0.1rem;
+    background-color: blue;
+}
+
+.mobile-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 30%;
+}
+
+@media screen and (max-width: 1370px) {
+  .mobile-header {
+    gap: 2rem;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .gist-container {
+    display: none;
+  }
+
+  /* @media screen and (max-width: 1024px) {
+  .gist-container {
+    display: flex;
+  } */
+
+
+@media screen and (max-width: 780px) {
+  .home-item {
+    display: flex;
+  }
+}
+
 }
