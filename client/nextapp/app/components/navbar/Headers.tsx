@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Image from "next/image";
 import "./headers.css"
 import MobileMenu from './MobileMenu'
 
@@ -8,15 +9,56 @@ const Headers = () => {
     <header>
         <nav>
             <div className='container'>
-                <div className='' >
+                <div className='gist-container' >
                  <Link href={"/"} className='logo'>GIST FORUM</Link>
 
                    {/* LEFT */}
                  </div>
               
-                <div className='hidden'></div>
-                {/* CENTER */}
-                <div className=''>
+                <div className='home-item'>
+                  <div className='link-item'>
+                    <Link href={"/"} className='image-link'>
+                      <Image 
+                        src="/Jerry.jpg" 
+                        alt="Home" 
+                        className="image-logo"
+                        width={16} 
+                        height={16}
+                        
+                      />
+                      <span>Home</span>
+                    </Link>
+
+                    <Link href={"/"} className='image-link'>
+                      <Image 
+                        src="/Jerry.jpg" 
+                        alt="About"
+                        className='image-logo' 
+                        width={16} 
+                        height={16}
+                       
+                      />
+                      <span>About</span>
+                    </Link>
+
+                    <Link href={"/"} className='image-link'>
+                      <Image 
+                        src="/Jerry.jpg" 
+                        alt="News" 
+                        className='image-logo'
+                        width={16} 
+                        height={16}
+                        
+                      />
+                      <span>News</span>
+                    </Link>
+                  </div>
+
+                {/* CENTER create Links*/}
+
+                </div>
+
+                <div className='mobile-header'>
 
                     <MobileMenu />
                      {/* Right */}
