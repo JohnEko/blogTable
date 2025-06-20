@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import "./headers.css"
 import MobileMenu from './MobileMenu'
+import SearchBar from './SearchBar';
 
 const Headers = () => {
   return (
@@ -52,8 +53,10 @@ const Headers = () => {
                       />
                       <span>News</span>
                     </Link>
-                  </div>
 
+                     <SearchBar />
+                  </div>
+                    {/* <SearchBar /> */}
                 {/* CENTER create Links*/}
 
                 </div>
