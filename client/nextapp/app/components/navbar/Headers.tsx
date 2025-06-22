@@ -53,12 +53,14 @@ const Headers = () => {
                       />
                       <span>News</span>
                     </Link>
-
-                     <SearchBar />
+                 
                   </div>
                     {/* <SearchBar /> */}
                 {/* CENTER create Links*/}
+                </div>
 
+                <div>
+                      <SearchBar />
                 </div>
 
                 <div className='mobile-header'>

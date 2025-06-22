@@ -39,6 +39,7 @@
     width: 30%;
 }
 
+
 @media screen and (max-width: 1370px) {
   .mobile-header {
     gap: 2rem;
@@ -50,11 +51,16 @@
   .gist-container {
     display: none;
   }
+}
 
-  /* @media screen and (max-width: 1024px) {
-  .gist-container {
+ @media screen and (max-width: 780px) {
+  .image-link {
     display: flex;
-  } */
+    justify-content: center;
+  }
+   
+  } 
+
 
 
 @media screen and (max-width: 780px) {
@@ -63,4 +69,4 @@
   }
 }
 
-}
+
