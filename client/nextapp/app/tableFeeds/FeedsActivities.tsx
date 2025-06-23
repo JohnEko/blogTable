@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from "./feeds.module.css"
+import Topics from "../topicsFeed/topicsActivities"
 
 
 
@@ -7,6 +8,7 @@ const FeedComponent = () => {
     return(
         <div className={styles.container}>
             {/* lets style our table on page modules.css*/}
+           
             <table>
                 <thead>
                     <tr>
@@ -26,7 +28,9 @@ const FeedComponent = () => {
                     <tr>
                         <td>
                             Anambra Man Shocked As Children Surprise Him With Brand New SUV On Birthday
+                       
                         </td>
+                       
                     </tr>
                     <tr>
                         <td>

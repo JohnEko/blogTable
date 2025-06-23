@@ -1,0 +1,28 @@
+.advert-item{
+    display: flex;
+    justify-content: center;
+    padding: 2.2rem;
+    display: grid;
+    gap: 1rem;
+    box-shadow: 5px 10px 18px #888888;
+    border: .5rem;
+    border-radius: 0.75rem;
+    margin-top: 0.8rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    height: 250px;
+   
+}
+
+/* .advert-box{
+    grid-column: span 1/ span 1;
+} */
+
+/* .advert-item{
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    border-radius: 0.75rem;
+
+
+} */
