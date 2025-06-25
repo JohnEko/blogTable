@@ -26,23 +26,7 @@ const Trending = () => {
             </div>
 
             <hr />
-            <div className='trending-row'>
-              <div className='trending-items'>
-                <span className='istrending'>#istrending </span>
-                
-              </div>
-              <span className='trending-now'>#Trending today </span>
-            </div>
-
-            <hr />
-            <div className='trending-row'>
-              <div className='trending-items'>
-                <span className='istrending'>#istrending </span>
-                
-              </div>
-              <span className='trending-now'>#Trending today </span>
-            </div>
-            
+           
        </div>
         
     </div>

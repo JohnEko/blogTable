@@ -10,10 +10,7 @@ export default function Home() {
     <div className={styles.page}>
        <PostAdvert />
       <main className={styles.main}>
-       
-        <Topics />
         <FeedComponent /> 
-        <Trending />
       </main>
     </div>
   );
