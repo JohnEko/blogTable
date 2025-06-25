@@ -1,24 +1,29 @@
 .advert-item{
-    /* display: flex;
-    justify-content: center; */
     padding: 2.2rem;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-    box-shadow: 5px 10px 18px #888888;
-    border: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    gap: 2em;
+    /* box-shadow: 5px 10px 18px #888888; */
+    border: .2rem solid #888888;
     border-radius: 0.75rem;
+    justify-content: center;
     margin-top: 0.8rem;
     margin-left: 7rem;
     margin-right: 7rem;
     height: 250px;
+    white-space: nowrap;
+    overflow: hidden;
    
 }
 
-.advert-box{
-    display: grid;
-    grid-column: span 1/ span 1;
+.card-box{
+    
+
+    padding: 2em;
+    margin-top: -2em;
+    /* border: 1px solid rgb(75, 82, 92); */
     border-radius: 0.75rem;
+    justify-content: center;
   
     
     
@@ -40,6 +45,8 @@
     overflow: hidden;
     aspect-ratio: 1/1;
     border-radius: 0.75rem;
+    display: grid;
+    grid-column: span 1/ span 1;
 
 
 } */
@@ -47,8 +54,9 @@
 .image-villa{
     border-radius: .75rem;
     margin-top: -.8rem;
-    
+    justify-content: center;
     padding: 5px;
+    margin-left: -3rem;
     
 }
 
@@ -62,11 +70,19 @@
 
 }
 
-@media (min-width: 768px) {
-    .advert-box{
+/* @media screen and (max-width: 680px) {
+  .image-villa {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+} */
+
+/* @media (min-width: 768px) {
+    .card-box{
         grid-template-rows: 1fr;
     }
-}
+} */
 
 /* @media (min-width: 768px) {
     .advert-box{
