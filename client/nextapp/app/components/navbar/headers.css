@@ -53,7 +53,7 @@
   }
 }
 
- @media screen and (max-width: 780px) {
+ @media screen and (max-width: 680px) {
   .image-link {
     display: flex;
     justify-content: center;

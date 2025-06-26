@@ -22,3 +22,10 @@
     margin-top: 0.5rem;
 }
 
+@media only screen and (max-width: 680){
+  .item-3{
+    grid-area: 2 ;
+  }
+  
+}
+
