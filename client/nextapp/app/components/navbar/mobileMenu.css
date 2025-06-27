@@ -37,12 +37,15 @@
     line-height: 1.75rem;
     text-overflow: ellipsis;
     z-index: 10;
+    display: none;
 }
 
 
-@media screen and (max-width: 780px) {
-  .mobile-icon {
-    display: none;
+@media only screen and (max-width: 680px) {
+  .mobile-link {
+    display: flex
   }
 }
+
+
 

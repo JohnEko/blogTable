@@ -3,6 +3,9 @@
   background-color: #ffffff;
   
 }
+.main{
+  max-width: 70rem;
+}
 /* .main{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;

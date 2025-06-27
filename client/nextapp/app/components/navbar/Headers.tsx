@@ -59,7 +59,7 @@ const Headers = () => {
                 {/* CENTER create Links*/}
                 </div>
 
-                <div>
+                <div className='search-menu'>
                       <SearchBar />
                 </div>
 
