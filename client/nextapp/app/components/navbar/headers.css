@@ -39,6 +39,16 @@
     width: 30%;
 }
 
+@media only screen and (max-width: 680px) {
+  .search-menu {  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-area: 2;    
+
+  }
+  
+}
+
 
 @media screen and (max-width: 1370px) {
   .mobile-header {
@@ -46,6 +56,8 @@
     justify-content: flex-end;
   }
 }
+
+
 
 @media screen and (max-width: 680px) {
   .gist-container {
@@ -61,12 +73,12 @@
    
   } 
 
-
-
-@media screen and (max-width: 780px) {
-  .home-item {
-    display: flex;
+  @media only screen and (max-width: 680px) {
+  .link-item {
+    display: none;
   }
 }
+
+
 
 

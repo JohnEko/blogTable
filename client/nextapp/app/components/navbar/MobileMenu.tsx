@@ -17,8 +17,9 @@ const MobileMenu = () => {
         > 
         {/* we can use searchModal from previous projects */}
     
-         
-            <div  className='mobile-menu' />
+          
+            <div  className={`mobile-menu ${isOpen ? "rotate-45": "" 
+                            } origin-left ease-in-out duration-500`}/>
             <div className='mobile-menu'/>
             <div className='mobile-menu'/>  
         
