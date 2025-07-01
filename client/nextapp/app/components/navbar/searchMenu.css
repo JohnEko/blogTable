@@ -40,7 +40,7 @@
     margin-left: 0.2rem;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 680px) {
   .search-bar {
     display: flex;
     justify-content: center;
@@ -48,13 +48,14 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 680px) {
   .search-input {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    height: 1.7rem;
-    width: 12rem;
+    height: 1.9rem;
+    width: 20rem;
+    margin-left: -5rem;
   }
 }
 
@@ -65,13 +66,13 @@
   }
 }
 
-@media screen and (max-width: 940px) {
+@media only screen and (max-width: 940px) {
   .search {
     visibility: hidden;
   }
 }
 
-@media screen and (max-width: 940px) {
+@media only screen and (max-width: 940px) {
   .search-input {
     display: flex;
     justify-content: center;

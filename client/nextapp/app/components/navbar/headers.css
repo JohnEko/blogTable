@@ -61,7 +61,8 @@
 
 @media screen and (max-width: 680px) {
   .gist-container {
-    display: none;
+    display: flex;
+    justify-content: center;
   }
 }
 

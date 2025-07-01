@@ -19,11 +19,13 @@ const FeedComponent = () => {
                         <thead>
                             <tr>
                                 <td>
-                                    <b><Link href="/news">Featured Topic</Link></b>
-                                    /
-                                    <b><Link href={"/"}>Facbook</Link></b>
-                                    /
-                                    <b><Link href={"/"}>Instagram</Link></b>
+                                    <div className="feature">
+                                        <b><Link href="/news">Featured Topic</Link></b>
+                                        /
+                                        <b><Link href={"/"}>Facbook</Link></b>
+                                        /
+                                        <b><Link href={"/"}>Instagram</Link></b>
+                                    </div>
                                 </td>
                                 
                             </tr>
@@ -33,7 +35,7 @@ const FeedComponent = () => {
                         <tbody>
                             <tr>
                                 <td>
-                                    Anambra Man Shocked As Children Surprise Him With Brand New SUV On Birthday
+                                    <Link href={"/news"}>{"title"}Anambra Man Shocked As Children Surprise Him With Brand New SUV On Birthday</Link>
                             
                                 </td>
                             
@@ -45,7 +47,7 @@ const FeedComponent = () => {
                             </tr>
                             <tr>
                                 <td>
-                                    <b>Your Good Work has killed coalition</b>
+                                    Your Good Work has killed coalition
                                 </td>
                             </tr>
                             <tr>
