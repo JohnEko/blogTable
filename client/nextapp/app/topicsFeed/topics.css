@@ -14,17 +14,48 @@
     background-color: #EFF3F4;
     border-radius: 0.45rem;
     height: full;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-dark-light);
 
 }
 .image-activiy{
     display: flex;
     justify-content: center;
     margin-top: 0.5rem;
+    
+}
+
+.topic_list{
+  border: 2px solid blue;
+  border-radius: 0.2rem;
+  text-align: center;
+ 
 }
 
 @media only screen and (max-width: 680){
   .item-3{
     grid-area: 2 ;
+  }
+  
+}
+
+@media only screen and (max-width: 680){
+  .topic_list{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    border: #EFF3F4;
+    border-radius: 0.75rem solid rgb(214, 188, 188);
+    background-color: red;
+    padding: 1px 1px;
+    margin: 0.2rem 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 680){
+  .villa-image{
+    width: 400px;
   }
   
 }

@@ -61,7 +61,25 @@
 .container tbody tr:hover{
   background-color: #ccc;
   text-decoration: underline;
+  
 }
+ .container tr{
+     color: #181870;
+     font-weight: bolder;
+     font-size: 11.5pt;
+     word-break: break-all;
+     text-align: center;
+    
+}
+
+.container tr b{
+     color: #181870;
+     font-size: 11.5pt;
+     word-break: break-all;
+     text-align: center;
+    
+}
+
 .container tr b:hover{
   text-decoration: underline;
 }
@@ -69,6 +87,29 @@
 @media only screen and (max-width: 680){
   .main{
     grid-template-columns: 1fr;  
+    
+  }
+  
+}
+
+@media only screen and (max-width: 680){
+  .container tr{
+     color: #181870;
+     font-weight: bolder;
+     font-size: 11.5pt;
+     word-break: break-all;
+     text-align: center;
+    
+  }
+  
+}
+
+@media only screen and (max-width: 680){
+  .container tr b{
+     color: #181870;
+     font-size: 11.5pt;
+     word-break: break-all;
+     text-align: center;
     
   }
   
