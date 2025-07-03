@@ -45,10 +45,9 @@
     display: flex;
     justify-content: center;
     gap: .5rem;
-    border: #EFF3F4;
+    border:2px solid blue;
     border-radius: 0.75rem solid rgb(214, 188, 188);
-    background-color: red;
-    padding: 1px 1px;
+    padding: 6px 1px;
     margin: 0.2rem 0.2rem;
   }
 }

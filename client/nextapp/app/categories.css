@@ -1,0 +1,30 @@
+h3 {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: .4rem .4rem  0  0;
+  margin-left: 7rem;
+  
+  padding: 12px 9px;
+  background-color: #e8ece0;
+  font-weight: bold;
+  color: #181870;
+  
+}
+
+
+.td-items{
+   display: flex;
+   justify-content: center;
+   border: 1px solid #ccc;
+   margin-left: 7rem;
+   
+   padding: 12px 9px;
+   column-gap: .45rem;
+   margin-top: -0.1rem;
+   border-radius: 0rem  0rem 0.4rem 0.2rem;
+   background-color: #e8ece0;
+   font-weight: bold;
+   color: #181870;
+}
+
