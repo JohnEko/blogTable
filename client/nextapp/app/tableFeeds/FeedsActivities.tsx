@@ -15,49 +15,51 @@ const FeedComponent = () => {
             </div>
             <div className={styles.container}>
                 <div className="item-2">
-                    <table>
-                        <thead>
+                    <table className="table-bords">
+                        {/* <thead> */}
+                         <tbody>
                             <tr>
                                 <td>
-                                    <div className="feature">
+                                    {/* <div className="feature"> */}
                                         <b><Link href="/news">Featured Topic</Link></b>
-                                        /
+                                        / 
                                         <b><Link href={"/"}>Facbook</Link></b>
                                         /
                                         <b><Link href={"/"}>Instagram</Link></b>
-                                    </div>
+                                    {/* </div> */}
                                 </td>
                                 
                             </tr>
 
-                        </thead>
+                        {/* </thead> */}
 
-                        <tbody>
+                        {/* <tbody> */}
                             <tr>
-                                <td>
-                                    <Link href={"/news"}>{"title"}Anambra Man Shocked As Children Surprise Him With Brand New SUV On Birthday</Link>
-                            
+                                {/* loop or map through all the post and title */}
+                                <td className="feed-component">
+                                   » <Link href={"/news.id"}>{"title"}Anambra Man Shocked As Children Surprise Him With Brand New SUV On Birthday</Link> «
+                                    
                                 </td>
                             
                             </tr>
                             <tr>
                                 <td>
-                                    AriseTV Praises Omokri For Proving that 30Km Completed on Lagos-Calabar Highway
+                                   »  AriseTV Praises Omokri For Proving that 30Km Completed on Lagos-Calabar Highway «
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    Your Good Work has killed coalition
+                                   »  Your Good Work has killed coalition «
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    Oshiomhole Vs Air Peace: He Beat Our Staff - Management
+                                    » Oshiomhole Vs Air Peace: He Beat Our Staff - Management «
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    50% Of Nigerian Minimum Wage Earners Spend All Income On Food – SBM Intelligence
+                                   »  50% Of Nigerian Minimum Wage Earners Spend All Income On Food – SBM Intelligence «
                                 </td>
                             </tr>
                             <tr>
@@ -72,17 +74,17 @@ const FeedComponent = () => {
                             </tr>
                             <tr>
                                 <td>
-                                » I Was A Senior Registrar In UNTH But Pushed Barrow In UK - Medical Doctor
+                                » I Was A Senior Registrar In UNTH But Pushed Barrow In UK - Medical Doctor «
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    » Ngerians Must Rise Against One-Party State
+                                    » Ngerians Must Rise Against One-Party State «
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                » President Tinubu Commissions New Link Roads In Abuja Expanding Urban Network
+                                » President Tinubu Commissions New Link Roads In Abuja Expanding Urban Network «
                                 </td>
                             </tr>
                         </tbody>
