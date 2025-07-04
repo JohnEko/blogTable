@@ -9,6 +9,7 @@ const FeedComponent = () => {
     return(
          
         <div className={styles.main}>
+            
             {/* lets style our table on page modules.css*/}
             <div className="item-1">
                 <Topics />
@@ -21,10 +22,10 @@ const FeedComponent = () => {
                             <tr>
                                 <td>
                                     {/* <div className="feature"> */}
-                                        <b><Link href="/news">Featured Topic</Link></b>
-                                        / 
-                                        <b><Link href={"/"}>Facbook</Link></b>
-                                        /
+                                        <b><Link href="/news">Featured Topic {"/"} </Link></b>
+                                        
+                                        <b><Link href={"/"}>Facbook {"/"} </Link></b>
+                                        
                                         <b><Link href={"/"}>Instagram</Link></b>
                                     {/* </div> */}
                                 </td>
