@@ -11,8 +11,9 @@
     /* border-radius: 0.75rem; */
     justify-content: center;
     margin-top: 0.8rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    /* margin: 0rem auto; */
+    margin-left: 5rem;
+    margin-right: 3.5rem;
     height: 250px;
     white-space: nowrap;
     overflow: hidden;
@@ -22,6 +23,7 @@
 .card-box{
     padding: 2em;
     margin-top: -2em;
+    
     /* border: 1px solid rgb(75, 82, 92); */
     border-radius: 0.75rem;
     justify-content: center;   

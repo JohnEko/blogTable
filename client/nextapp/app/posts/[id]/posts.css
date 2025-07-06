@@ -1,0 +1,29 @@
+.posts{
+    
+    /* border: .2rem solid blue;  */
+    border-radius: 1rem;
+    overflow: scroll;
+    text-align: center;
+    cursor: pointer;
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+   
+
+}
+
+
+td.l, l{
+  text-align:left;
+}
+
+td.pu{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+tbody tr {
+  border-bottom: .2px solid #ddd; 
+  background-color: #dff0d8;
+  height: 50px;
+} 
