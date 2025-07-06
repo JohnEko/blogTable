@@ -1,11 +1,25 @@
+// 'use client'
+
 import Link from "next/link"
+// import { useState, useEffect } from "react"
 import styles from "./feeds.module.css"
 import Topics from "../topicsFeed/topicsActivities"
 import Trending from "../trendingFeeds/trendingActivities"
+import apiService from "../apiBackend/apiService"
+import {PostsDetailsResponse} from "../hooks/BlogPost"
 
 
 
-const FeedComponent = () => {
+
+
+const FeedComponent = async () => {
+    
+    const response = await fetch("https://dummyjson.com/posts");
+    // const response = await apiService.get(url)
+    const {posts} : PostsDetailsResponse = await response.json()
+    // console.log(posts)
+
+
     return(
          
         <div className={styles.main}>
@@ -17,7 +31,6 @@ const FeedComponent = () => {
             <div className={styles.container}>
                 <div className="item-2">
                     <table className="table-bords">
-                        {/* <thead> */}
                          <tbody>
                             <tr>
                                 <td>
@@ -32,18 +45,22 @@ const FeedComponent = () => {
                                 
                             </tr>
 
-                        {/* </thead> */}
-
-                        {/* <tbody> */}
                             <tr>
                                 {/* loop or map through all the post and title */}
                                 <td className="feed-component">
-                                   » <Link href={"/news.id"}>{"title"}Anambra Man Shocked As Children Surprise Him With Brand New SUV On Birthday</Link> «
+                                    {posts.map(({id, title}) =>(
+                                        <article key={id}>
+                                             » <Link href={`posts/{id}`}>{title}</Link> «
+                                         <hr />
+                                         </article>
+                                    ))}
+                                   
                                     
                                 </td>
                             
                             </tr>
-                            <tr>
+
+                            {/* <tr>
                                 <td>
                                    »  AriseTV Praises Omokri For Proving that 30Km Completed on Lagos-Calabar Highway «
                                 </td>
@@ -87,7 +104,7 @@ const FeedComponent = () => {
                                 <td>
                                 » President Tinubu Commissions New Link Roads In Abuja Expanding Urban Network «
                                 </td>
-                            </tr>
+                            </tr> */}
                         </tbody>
                     </table>
                 </div>

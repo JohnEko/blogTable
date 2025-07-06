@@ -39,7 +39,7 @@ const Headers = () => {
                         height={16}
                        
                       />
-                      <span>About</span>
+                      <span>About Us</span>
                     </Link>
 
                     <Link href={"/"} className='image-link'>

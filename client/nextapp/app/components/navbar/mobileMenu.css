@@ -43,7 +43,8 @@
 
 @media only screen and (max-width: 680px) {
   .mobile-link {
-    display: flex
+    display: flex;
+    
   }
 }
 

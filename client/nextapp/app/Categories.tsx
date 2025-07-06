@@ -11,16 +11,36 @@ const Categories = () => {
         <table className='table-boards'>
           <tbody>
               <tr>
-                  <th><h3>Wazobia Forum</h3></th>
+                  <th><h3>Gist Nigerian Forums</h3></th>
               </tr>          
               <tr>
                 <td className="table-data">
-                  <Link href={"/entertainment"} title={'/title'}>
-                  <b>Entertainment</b>
+                  <Link href={"/Gist Politics"} title={'/title'}>
+                  <b>Gist Politics{": "}</b>
                   </Link>
-                  /
+                  
+                  <Link href={"/entertainment"} title={'/title'}>
+                  <b>Entertainment{", "}</b>
+                  </Link>
+                  
                   <Link href={"/Sport"} title={'/title'}>
-                  <b>Sport</b>
+                  <b>Sport{", "}</b>
+                  </Link>
+
+                  <Link href={"/Sport"} title={'/title'}>
+                  <b>Education{", "}</b>
+                  </Link>
+
+                  <Link href={"/Sport"} title={'/title'}>
+                  <b>Technology{", "}</b>
+                  </Link>
+
+                  <Link href={"/Sport"} title={'/title'}>
+                  <b>Health{", "}</b>
+                  </Link>
+
+                  <Link href={"/Sport"} title={'/title'}>
+                  <b>Business{", "}</b>
                   </Link>
                 </td>
                 {/* <td>Sports</td>
