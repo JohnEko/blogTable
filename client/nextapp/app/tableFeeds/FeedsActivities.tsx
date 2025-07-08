@@ -5,7 +5,7 @@ import Link from "next/link"
 import styles from "./feeds.module.css"
 import Topics from "../topicsFeed/topicsActivities"
 import Trending from "../trendingFeeds/trendingActivities"
-import apiService from "../apiBackend/apiService"
+import apiService from "../api/apiService"
 import {PostsDetailsResponse} from "../hooks/BlogPost"
 
 
@@ -15,7 +15,7 @@ import {PostsDetailsResponse} from "../hooks/BlogPost"
 const FeedComponent = async () => {
     
     const response = await fetch("https://dummyjson.com/posts");
-    // const response = await apiService.get(url)
+    //const posts = await apiService.get(post)
     const {posts} : PostsDetailsResponse = await response.json()
     // console.log(posts)
 
