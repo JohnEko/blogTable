@@ -8,7 +8,8 @@ const apiService = {
         console.log('get', url)
 
         return new Promise((resolve, rejects) => {
-            fetch(`https://dummyjson.com/${url}`, {
+            
+            fetch(`http://localhost:8000${url}`, {
                 method: 'GET',
                 headers: {
                     'Accept' : 'application/json',

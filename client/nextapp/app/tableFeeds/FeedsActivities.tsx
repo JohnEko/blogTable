@@ -1,4 +1,4 @@
-// 'use client'
+ 'use client'
 
 import Link from "next/link"
 // import { useState, useEffect } from "react"
@@ -7,19 +7,40 @@ import Topics from "../topicsFeed/topicsActivities"
 import Trending from "../trendingFeeds/trendingActivities"
 import apiService from "../api/apiService"
 import {PostsDetailsResponse} from "../hooks/BlogPost"
+import React, { useEffect, useState } from "react"
+import axios from 'axios'
 
 
+export type UserType = {
+    id: string,
+    title: string,
+    body: string,
+    postId: string,
+    reactions: string,
+    user: string
+
+}
+
+interface UserArticleProps {
+    id: string
+    title: string
+}
 
 
-
-const FeedComponent = async () => {
+const FeedComponent: React.FC<UserArticleProps> =  ({
+    id,
+    title
+}) => {
     
-    const response = await fetch("https://dummyjson.com/posts");
-    //const posts = await apiService.get(post)
-    const {posts} : PostsDetailsResponse = await response.json()
-    // console.log(posts)
+    const [data, setData] = useState<any[]>([])
 
-
+    useEffect(() =>{
+        const fetchUser = async () =>{
+        const res = await axios.get('http://localhost:8000');
+        setData(res.data)
+        }
+        fetchUser()
+    })
     return(
          
         <div className={styles.main}>
@@ -48,9 +69,9 @@ const FeedComponent = async () => {
                             <tr>
                                 {/* loop or map through all the post and title */}
                                 <td className="feed-component">
-                                    {posts.map(({id, title}) =>(
-                                        <article key={id}>
-                                             » <Link href={`posts/{id}`}>{title}</Link> «
+                                    {data.map((id, title) =>(
+                                        <article key={title}>
+                                             » <Link href={`posts/{id}`}>{id.title}</Link> «
                                          <hr />
                                          </article>
                                     ))}
