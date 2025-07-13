@@ -7,6 +7,7 @@ import{ Posts} from './posts.js'
 const app = express()
 // const posts = require(Posts);
 app.use(cors())
+app.use(express.json())
 
 let posts = Posts
 
@@ -29,27 +30,13 @@ app.get('/api/posts/:id',(req, res) => {
 
 
 
-//Create a post posts
-app.post('/api/posts/', (req, res, next) => {
-    const postsArticle = {
-      "id": 12,
-      "body": "This is some awesome thinking!",
-      "postId": 242,
-      "reactions": {
-        "likes": 192,
-        "dislikes": 25
-      },
-      "user": {
-        "id": 105,
-        "username": "emmac",
-        "fullName": "Emma Wilson"
-      }
-    }
-    if (!postsArticle) {
-        return res.status(404).json({ msg: `A post with the corresponding was not found` })
-    }
-    posts.push(postsArticle)
-    res.status(201).json(posts)
+//Create a post posts send new data
+//this method takes the body and auto increment the post
+app.post('/api/posts', (req, res, next) => {
+    const {body} = req
+    const newPost ={ id: posts[posts.length - 1].id + 1, ...body }
+    posts.push(newPost)
+    return res.status(201).send(newPost)
 
 })
 //update method
