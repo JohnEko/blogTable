@@ -9,49 +9,50 @@ const PostAdvert =() => {
             <div className='card-box'>
                 {/* <div className='advert-item'> */}
                     <Image 
-                        src='/villa.jpg'
+                        src={'/villa.jpg'}
                         className="image-villa"
                         alt="Beach"
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={150}
                     />
             
                 {/* </div> */}
             </div> 
              <div className='card-box'>
                     <Image 
-                        src='/villa.jpg'
+                        src={'/villa.jpg'}
                         className="image-villa"
                         alt="Beach"
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={150}
                     />
             </div> 
              <div className='card-box'>
                     <Image 
-                        src='/villa.jpg'
+                        src={'/villa.jpg'}
                         className="image-villa"
                         alt="Beach"
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={150}
                     />
             </div> 
             <div className='card-box'>
                     <Image 
-                        src='/villa.jpg'
+                        src={'/villa.jpg'}
                         className="image-villa"
                         alt="Beach"
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={150}
                     />
             </div>  
             <div className='card-box'>
+                
                     <Image 
-                        src='/villa.jpg'
+                        src={'/villa.jpg'}
                         className="image-villa"
                         alt="Beach"
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={150}
                     />
             </div>   
         

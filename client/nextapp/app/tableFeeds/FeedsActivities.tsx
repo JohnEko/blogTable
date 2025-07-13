@@ -32,7 +32,7 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
     title
 }) => {
     
-    const [data, setData] = useState<any[]>([])
+    const [data, setData] = useState<UserType[]>([])
 
     useEffect(() =>{
         const fetchUser = async () =>{
@@ -40,7 +40,7 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
         setData(res.data)
         }
         fetchUser()
-    })
+    }, [])
     return(
          
         <div className={styles.main}>
@@ -81,51 +81,6 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
                             
                             </tr>
 
-                            {/* <tr>
-                                <td>
-                                   »  AriseTV Praises Omokri For Proving that 30Km Completed on Lagos-Calabar Highway «
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                   »  Your Good Work has killed coalition «
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    » Oshiomhole Vs Air Peace: He Beat Our Staff - Management «
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                   »  50% Of Nigerian Minimum Wage Earners Spend All Income On Food – SBM Intelligence «
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                » Saudi $5 Billion Loan To Nigeria Hangs In The Balance After Crude Prices Plunge «
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    » Halima Suleiman Zakari Visits Jahun Vesicovaginal Fistula (VVF) Hospital «
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                » I Was A Senior Registrar In UNTH But Pushed Barrow In UK - Medical Doctor «
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    » Ngerians Must Rise Against One-Party State «
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                » President Tinubu Commissions New Link Roads In Abuja Expanding Urban Network «
-                                </td>
-                            </tr> */}
                         </tbody>
                     </table>
                 </div>

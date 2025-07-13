@@ -3,6 +3,8 @@ import "./topics.css"
 import Link from 'next/link'
 import Image from 'next/image'
 
+
+
 const Topics = () => {
   return (
       <div className="page-activities">     
@@ -11,13 +13,13 @@ const Topics = () => {
           // onClick={() => ("Image-Advert")}
           >
             <Link href={"facebook.com"} target='_blank'>
+            {/* we can use image url for user to click   */}
                 <Image 
-                // we can use image url for user to click  
-                  src={"/villa.jpg"}
+                  src={'/villa.jpg'}
                   alt=''
                   className='villa-image'
-                  width={200}
-                  height={100}
+                  width={300}
+                  height={150}
                 / >
             </Link>
       </div>
