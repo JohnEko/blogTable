@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     res.send(posts)
 })
 //Get all single post, check is post dose not exist
-app.get('/api/posts/:id',(req, res) => {
+app.get('/posts/:id',(req, res) => {
         const id = parseInt(req.params.id)
         const post = posts.find((post) => post.id === id)
 
@@ -32,7 +32,7 @@ app.get('/api/posts/:id',(req, res) => {
 
 //Create a post posts send new data
 //this method takes the body and auto increment the post
-app.post('/api/posts', (req, res, next) => {
+app.post('/posts', (req, res, next) => {
     const {body} = req
     const newPost ={ id: posts[posts.length - 1].id + 1, ...body }
     posts.push(newPost)
@@ -40,7 +40,7 @@ app.post('/api/posts', (req, res, next) => {
 
 })
 //update method
-app.put('/api/posts/:id', (req, res, next) => {
+app.put('/posts/:id', (req, res, next) => {
     const id = parseInt(req.params.id);
     const post = posts.find((post) => post.id === id)
 
@@ -54,7 +54,7 @@ app.put('/api/posts/:id', (req, res, next) => {
 
 //delete method
 
-app.delete('/api/get/:id', (req, res, next) => {
+app.delete('/get/:id', (req, res, next) => {
     const id = parseInt(req.params.id);
     const post = posts.find((post) => post.id === id)
 

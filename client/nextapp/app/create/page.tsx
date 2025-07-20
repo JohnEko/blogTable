@@ -1,12 +1,14 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
+import "./addForm.css"
+import { useRouter } from 'next/navigation'
 
 const CreatePost = () => {
 
-
+  const router = useRouter()
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
   const [postId, setPostId] = useState('')
@@ -14,15 +16,16 @@ const CreatePost = () => {
   const [user, setUser] = useState('')
 
 
-  const setRections = (reaction : string) => {
-    setRections(reaction)
-  }
+  // const setRections = (reaction : string) => {
+  //   setRections(reaction)
+  // }
 
-   const setUsers = (user : string) => {
-    setUser(user)
-  }
+  //  const setUsers = (user : string) => {
+  //   setUser(user)
+  // }
 
-  const creatForm = async () => {
+  const creatForm = async (e:any) => {
+    e.preventDefault()
     if (
         title &&
         body &&
@@ -36,22 +39,24 @@ const CreatePost = () => {
       formData.append('postId', postId)
       formData.append('reactions', reaction)
       formData.append('user', user)
-
-      const res = await axios.post('http://localhost:8000/api/posts', formData)
-                      .then(res =>{
-                        console.log(res.data)
-
-                      })
-                      .catch(error => {
-                        console.log(error)
-                      })        
+      console.log(creatForm)
+      await axios.post('http://localhost:8000/posts/', formData)
+      // console.log(res.data)
+          .then(res =>{
+            console.log(res.data)
+          })
+          .catch(error => {
+            console.log(error)
+          })
+          router.push('/')       
     }
+  
   }
 
   return (
     <div className='form-data'>
        <h1> Create new post </h1>
-       <form onSubmit={creatForm}>
+       <form className='addForm'  onSubmit={creatForm}>
 
         <input type="title"  
               placeholder='Title' 
@@ -83,7 +88,7 @@ const CreatePost = () => {
               onChange={(e) => setBody(e.target.value)}
             />
 
-           <button style={{marginTop:'5px'}}>Create post</button>
+           <button>Create post</button>
 
        </form>
     </div>
