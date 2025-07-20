@@ -6,6 +6,7 @@ import axios from 'axios'
 import "./addForm.css"
 import { useRouter } from 'next/navigation'
 
+
 const CreatePost = () => {
 
   const router = useRouter()
@@ -15,41 +16,29 @@ const CreatePost = () => {
   const [reaction, setReaction] = useState('')
   const [user, setUser] = useState('')
 
-
-  // const setRections = (reaction : string) => {
-  //   setRections(reaction)
-  // }
-
-  //  const setUsers = (user : string) => {
-  //   setUser(user)
-  // }
-
+//Posting a new article to the frontpage
   const creatForm = async (e:any) => {
     e.preventDefault()
-    if (
-        title &&
-        body &&
-        postId &&
-        reaction &&
-        user
-    ){
-      const formData = new FormData()
-      formData.append('title', title)
-      formData.append('body', body)
-      formData.append('postId', postId)
-      formData.append('reactions', reaction)
-      formData.append('user', user)
-      console.log(creatForm)
-      await axios.post('http://localhost:8000/posts/', formData)
-      // console.log(res.data)
+    const posts = {title, postId, reaction, user, body}
+
+
+    console.log(posts)
+     await axios.post('http://localhost:8000/posts', posts, 
+      {headers: {
+          'Content-type': 'application/json',
+          
+        }}, 
+      )
+      //console.log(res.data)
           .then(res =>{
             console.log(res.data)
+            console.log("New article added!")
           })
           .catch(error => {
             console.log(error)
           })
           router.push('/')       
-    }
+    
   
   }
 
@@ -65,7 +54,7 @@ const CreatePost = () => {
             />
 
         <input type="postId"  
-              placeholder='Post' 
+              placeholder='PostId' 
               value={postId} 
               onChange={(e) => setPostId(e.target.value)}
             />
@@ -87,7 +76,6 @@ const CreatePost = () => {
               value={body} 
               onChange={(e) => setBody(e.target.value)}
             />
-
            <button>Create post</button>
 
        </form>

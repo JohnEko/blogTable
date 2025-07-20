@@ -16,8 +16,8 @@ export type UserType = {
     title: string,
     body: string,
     postId: string,
-    reactions: string,
-    user: string
+    likes: number,
+    dislikes: number
 
 }
 

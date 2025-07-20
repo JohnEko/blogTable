@@ -4,25 +4,25 @@ export const Posts = [
       "title": "He was an expert but not in a discipline",
       "body": "He was an expert but not in a discipline that anyone could fully appreciate. He knew how to hold the cone just right so that the soft server ice-cream fell into it at the precise angle to form a perfect cone each and every time. It had taken years to perfect and he could now do it without even putting any thought behind it.",
       "postId": 242,
-      "reactions": {
-        "likes": 192,
-        "dislikes": 25
-      },
+      "comments": "You are absolutely right",
+      "likes": 192,
+      "dislikes": 25,
       "user": {
         "id": 105,
         "username": "emmac",
-        "fullName": "Emma Wilson"
+        "fullName": "Emma Wilson",
       }
+      
     },
     {
       "id": 2,
       "title": "Dave watched as the forest burned up on the hill.",
       "body": "Dave watched as the forest burned up on the hill, only a few miles from her house. The car had been hastily packed and Marta was inside trying to round up the last of the pets. Dave went through his mental list of the most important papers and documents that they couldn't leave behind. He scolded himself for not having prepared these better in advance and hoped that he had remembered everything that was needed. He continued to wait for Marta to appear with the pets, but she still was nowhere to be seen.",
       "postId": 46,
-      "reactions": {
-        "likes": 192,
-        "dislikes": 25
-      },
+      "comments": "we are geeting there",
+      "views": 305,
+      "likes": 192,
+      "dislikes": 25,
       "user": {
         "id": 183,
         "username": "cameronp",
@@ -34,10 +34,10 @@ export const Posts = [
       "title": "All he wanted was a candy bar.",
       "body": "All he wanted was a candy bar. It didn't seem like a difficult request to comprehend, but the clerk remained frozen and didn't seem to want to honor the request. It might have had something to do with the gun pointed at his face.",
       "postId": 235,
-     "reactions": {
-        "likes": 192,
-        "dislikes": 25
-      },
+      "comments": "The Bay of Bengal is hit frequently by cyclones. The months of November and May, in particular, are dangerous in this regard",
+      "views": 305,
+      "likes": 192,
+      "dislikes": 25,
       "user": {
         "id": 1,
         "username": "emilys",
@@ -49,10 +49,10 @@ export const Posts = [
       "title": "Hopes and dreams were dashed that day.",
       "body": "Hopes and dreams were dashed that day. It should have been expected, but it still came as a shock. The warning signs had been ignored in favor of the possibility, however remote, that it could actually happen. That possibility had grown from hope to an undeniable belief it must be destiny. That was until it wasn't and the hopes and dreams came crashing down.",
       "postId": 31,
-      "reactions": {
-        "likes": 192,
-        "dislikes": 25
-      },
+      "comments":"Thinking is the capital, Enterprise is the way, Hard Work is the solution.",
+      "views": 30,
+      "likes": 192,
+      "dislikes": 25,
       "user": {
         "id": 89,
         "username": "braydenf",
@@ -64,10 +64,10 @@ export const Posts = [
       "title": "Dave wasn't exactly sure how he had ended up",
       "body": "Dave wasn't exactly sure how he had ended up in this predicament. He ran through all the events that had lead to this current situation and it still didn't make sense. He wanted to spend some time to try and make sense of it all, but he had higher priorities at the moment. The first was how to get out of his current situation of being naked in a tree with snow falling all around and no way for him to get down.",
       "postId": 212,
-      "reactions": {
-        "likes": 19,
-        "dislikes": 25
-      },
+      "comments":"If You Can'T Make It Good, At Least Make It Look Good.",
+      "views": "12",
+      "likes": 19,
+      "dislikes": 25,
       "user": {
         "id": 149,
         "username": "wyattp",
@@ -79,10 +79,8 @@ export const Posts = [
       "title": "This is important to remember.",
       "body": "This is important to remember. Love isn't like pie. You don't need to divide it among all your friends and loved ones. No matter how much love you give, you can always give more. It doesn't run out, so don't try to hold back giving it as if it may one day run out. Give it freely and as much as you want.",
       "postId": 184,
-      "reactions": {
-        "likes": 92,
-        "dislikes": 2
-      },
+      "likes": 92,
+      "dislikes": 2,
       "user": {
         "id": 110,
         "username": "danielt",
@@ -94,10 +92,8 @@ export const Posts = [
       "title": "One can cook on and with an open fire.",
       "body": "One can cook on and with an open fire. These are some of the ways to cook with fire outside. Cooking meat using a spit is a great way to evenly cook meat. In order to keep meat from burning, it's best to slowly rotate it.",
       "postId": 172,
-    "reactions": {
-        "likes": 2,
-        "dislikes": 1
-      },
+      "likes": 2,
+      "dislikes": 1,
       "user": {
         "id": 4,
         "username": "jamesd",
@@ -109,10 +105,8 @@ export const Posts = [
       "title": "There are different types of secrets.",
       "body": "There are different types of secrets. She had held onto plenty of them during her life, but this one was different. She found herself holding onto the worst type. It was the type of secret that could gnaw away at your insides if you didn't tell someone about it, but it could end up getting you killed if you did.",
       "postId": 233,
-      "reactions": {
-        "likes": 102,
-        "dislikes": 5
-      },
+      "likes": 102,
+      "dislikes": 5,
       "user": {
         "id": 145,
         "username": "lukec",
@@ -124,10 +118,8 @@ export const Posts = [
       "title": "They rushed out the door.",
       "body": "They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind. Everything was thrown into the car and they sped off. Thirty minutes later they were safe and that was when it dawned on them that they had forgotten the most important thing of all.",
       "postId": 207,
-      "reactions": {
-        "likes": 12,
-        "dislikes": 2
-      },
+       "likes": 12,
+      "dislikes": 2,
       "user": {
         "id": 207,
         "username": "jaces",
@@ -139,10 +131,8 @@ export const Posts = [
       "title": "It wasn't quite yet time to panic.",
       "body": "It wasn't quite yet time to panic. There was still time to salvage the situation. At least that is what she was telling himself. The reality was that it was time to panic and there wasn't time to salvage the situation, but he continued to delude himself into believing there was.",
       "postId": 87,
-      "reactions": {
-        "likes": 9,
-        "dislikes": 1
-      },
+      "likes": 9,
+      "dislikes": 1,
       "user": {
         "id": 86,
         "username": "noram",
@@ -154,10 +144,8 @@ export const Posts = [
       "title": "She was aware that things could go wrong.",
       "body": "She was aware that things could go wrong. In fact, she had trained her entire life in anticipation that things would go wrong one day. She had quiet confidence as she started to see that this was the day that all her training would be worthwhile and useful. At this point, she had no idea just how wrong everything would go that day.",
       "postId": 156,
-     "reactions": {
-        "likes": 195,
-        "dislikes": 3
-      },
+     "likes": 195,
+      "dislikes": 3,
       "user": {
         "id": 162,
         "username": "mateob",
@@ -169,10 +157,8 @@ export const Posts = [
        "title": "She wanted rainbow hair.",
       "body": "She wanted rainbow hair. That's what she told the hairdresser. It should be deep rainbow colors, too. She wasn't interested in pastel rainbow hair. She wanted it deep and vibrant so there was no doubt that she had done this on purpose.",
       "postId": 119,
-      "reactions": {
-        "likes": 10,
-        "dislikes": 1
-      },
+      "likes": 10,
+      "dislikes": 1,
       "user": {
         "id": 90,
         "username": "scarlettb",
@@ -184,10 +170,8 @@ export const Posts = [
       "title": "The paper was blank.",
       "body": "The paper was blank. It shouldn't have been. There should have been writing on the paper, at least a paragraph if not more. The fact that the writing wasn't there was frustrating. Actually, it was even more than frustrating. It was downright distressing.",
       "postId": 108,
-      "reactions": {
-        "likes": 1920,
-        "dislikes": 25
-      },
+      "likes": 1920,
+      "dislikes": 25,
       "user": {
         "id": 87,
         "username": "hunterg",
@@ -199,10 +183,8 @@ export const Posts = [
        "title": "The trees, therefore, must be such old",
       "body": "The trees, therefore, must be such old and primitive techniques that they thought nothing of them, deeming them so inconsequential that even savages like us would know of them and not be suspicious. At that, they probably didn't have too much time after they detected us orbiting and intending to land. And if that were true, there could be only one place where their civilization was hidden.",
       "postId": 20,
-      "reactions": {
-        "likes": 8,
-        "dislikes": 2
-      },
+      "likes": 8,
+      "dislikes": 2,
       "user": {
         "id": 77,
         "username": "jonathanp",
@@ -214,10 +196,8 @@ export const Posts = [
       "title": "There was only one way to do things in the Statton house.",
       "body": "There was only one way to do things in the Statton house. That one way was to do exactly what the father, Charlie, demanded. He made the decisions and everyone else followed without question. That was until today.",
       "postId": 6,
-      "reactions": {
-        "likes": 40,
-        "dislikes": 4
-      },
+      "likes": 40,
+      "dislikes": 4,
       "user": {
         "id": 17,
         "username": "evelyns",
@@ -229,10 +209,8 @@ export const Posts = [
       "title": "She was in a hurry.",
       "body": "She was in a hurry. Not the standard hurry when you're in a rush to get someplace, but a frantic hurry. The type of hurry where a few seconds could mean life or death. She raced down the road ignoring speed limits and weaving between cars. She was only a few minutes away when traffic came to a dead standstill on the road ahead.",
       "postId": 14,
-     "reactions": {
-        "likes": 5,
-        "dislikes": 1
-      },
+     "likes": 5,
+      "dislikes": 1,
       "user": {
         "id": 199,
         "username": "viviang",
@@ -244,10 +222,8 @@ export const Posts = [
        "title": "She had a terrible habit o comparing her life to others",
       "body": "She had a terrible habit o comparing her life to others. She realized that their life experiences were completely different than her own and that she saw only what they wanted her to see, but that didn't matter. She still compared herself and yearned for what she thought they had and she didn't.",
       "postId": 240,
-     "reactions": {
-        "likes": 72,
-        "dislikes": 8
-      },
+     "likes": 72,
+      "dislikes": 8,
       "user": {
         "id": 155,
         "username": "nicholase",
@@ -259,10 +235,8 @@ export const Posts = [
        "title": "The rain and wind abruptly stopped.",
       "body": "The rain and wind abruptly stopped, but the sky still had the gray swirls of storms in the distance. Dave knew this feeling all too well. The calm before the storm. He only had a limited amount of time before all Hell broke loose, but he stopped to admire the calmness. Maybe it would be different this time, he thought, with the knowledge deep within that it wouldn't.",
       "postId": 227,
-      "reactions": {
-        "likes": 12,
-        "dislikes": 1
-      },
+      "likes": 12,
+      "dislikes": 1,
       "user": {
         "id": 134,
         "username": "noramx",
@@ -274,10 +248,8 @@ export const Posts = [
      "title": "He couldn't remember exactly where he had read it",
       "body": "He couldn't remember exactly where he had read it, but he was sure that he had. The fact that she didn't believe him was quite frustrating as he began to search the Internet to find the article. It wasn't as if it was something that seemed impossible. Yet she insisted on always seeing the source whenever he stated a fact.",
       "postId": 245,
-      "reactions": {
-        "likes": 450,
-        "dislikes": 23
-      },
+      "likes": 450,
+      "dislikes": 23,
       "user": {
         "id": 203,
         "username": "novab",
@@ -289,10 +261,8 @@ export const Posts = [
       "title": "He wandered down the stairs and into the basement",
       "body": "He wandered down the stairs and into the basement. The damp, musty smell of un-use hung in the air. A single, small window let in a glimmer of light, but this simply made the shadows in the basement deeper. He inhaled deeply and looked around at a mess that had been accumulating for over 25 years. He was positive that this was the place he wanted to live.",
       "postId": 176,
-      "reactions": {
-        "likes": 55,
-        "dislikes": 4
-      },
+      "likes": 55,
+      "dislikes": 4,
       "user": {
         "id": 39,
         "username": "lucasg",
@@ -304,10 +274,8 @@ export const Posts = [
        "title": "She has seen this scene before.",
       "body": "She has seen this scene before. It had come to her in dreams many times before. She had to pinch herself to make sure it wasn't a dream again. As her fingers squeezed against her arm, she felt the pain. It was this pain that immediately woke her up.",
       "postId": 229,
-      "reactions": {
-        "likes": 5,
-        "dislikes": 0
-      },
+      "likes": 5,
+      "dislikes": 0,
       "user": {
         "id": 113,
         "username": "miam",
@@ -319,10 +287,8 @@ export const Posts = [
       "title": "It's an unfortunate reality that we don't teach people how to make money",
       "body": "It's an unfortunate reality that we don't teach people how to make money (beyond getting a 9 to 5 job) as part of our education system. The truth is there are a lot of different, legitimate ways to make money. That doesn't mean they are easy and that you won't have to work hard to succeed, but it does mean that if you're willing to open your mind a bit you don't have to be stuck in an office from 9 to 5 for the next fifty years o your life.",
       "postId": 9,
-      "reactions": {
-        "likes": 2,
-        "dislikes": 0
-      },
+      "likes": 2,
+      "dislikes": 0,
       "user": {
         "id": 113,
         "username": "miam",
@@ -334,10 +300,8 @@ export const Posts = [
       "title": "The robot clicked disapprovingly.",
       "body": "The robot clicked disapprovingly, gurgled briefly inside its cubical interior and extruded a pony glass of brownish liquid. \"Sir, you will undoubtedly end up in a drunkard's grave, dead of hepatic cirrhosis,\" it informed me virtuously as it returned my ID card. I glared as I pushed the glass across the table.",
       "postId": 33,
-      "reactions": {
-        "likes": 1,
-        "dislikes": 0
-      },
+      "likes": 1,
+      "dislikes": 0,
       "user": {
         "id": 155,
         "username": "nicholase",
@@ -349,10 +313,8 @@ export const Posts = [
       "title": "It went through such rapid contortions",
       "body": "It went through such rapid contortions that the little bear was forced to change his hold on it so many times he became confused in the darkness, and could not, for the life of him, tell whether he held the sheep right side up, or upside down. But that point was decided for him a moment later by the animal itself, who, with a sudden twist, jabbed its horns so hard into his lowest ribs that he gave a grunt of anger and disgust.",
       "postId": 121,
-      "reactions": {
-        "likes": 68,
-        "dislikes": 7
-      },
+      "likes": 68,
+      "dislikes": 7,
       "user": {
         "id": 169,
         "username": "jaxonb",
@@ -364,10 +326,8 @@ export const Posts = [
       "title": "She patiently waited for his number to be called.",
       "body": "She patiently waited for his number to be called. She had no desire to be there, but her mom had insisted that she go. She's resisted at first, but over time she realized it was simply easier to appease her and go. Mom tended to be that way. She would keep insisting until you wore down and did what she wanted. So, here she sat, patiently waiting for her number to be called.",
       "postId": 247,
-      "reactions": {
-        "likes": 72,
-        "dislikes": 2
-      },
+      "likes": 72,
+      "dislikes": 2,
       "user": {
         "id": 160,
         "username": "claires",
@@ -379,10 +339,8 @@ export const Posts = [
        "title": "Ten more steps.",
       "body": "If he could take ten more steps it would be over, but his legs wouldn't move. He tried to will them to work, but they wouldn't listen to his brain. Ten more steps and it would be over but it didn't appear he would be able to do it.",
       "postId": 79,
-      "reactions": {
-        "likes": 70,
-        "dislikes": 7
-      },
+      "likes": 70,
+      "dislikes": 7,
       "user": {
         "id": 59,
         "username": "ethanf",
@@ -394,10 +352,8 @@ export const Posts = [
       "title": "He had three simple rules by which he lived.",
       "body": "He had three simple rules by which he lived. The first was to never eat blue food. There was nothing in nature that was edible that was blue. People often asked about blueberries, but everyone knows those are actually purple. He understood it was one of the stranger rules to live by, but it had served him well thus far in the 50+ years of his life.",
       "postId": 55,
-      "reactions": {
-        "likes": 92,
-        "dislikes": 19
-      },
+       "likes": 92,
+      "dislikes": 19,
       "user": {
         "id": 57,
         "username": "nathand",
@@ -409,10 +365,8 @@ export const Posts = [
        "title": "The chair sat in the corner where it had been",
       "body": "The chair sat in the corner where it had been for over 25 years. The only difference was there was someone actually sitting in it. How long had it been since someone had done that? Ten years or more he imagined. Yet there was no denying the presence in the chair now.",
       "postId": 209,
-      "reactions": {
-        "likes": 85,
-        "dislikes": 8
-      },
+      "likes": 85,
+      "dislikes": 8,
       "user": {
         "id": 177,
         "username": "xavierw",
@@ -424,10 +378,9 @@ export const Posts = [
       "title": "Things aren't going well at all",
       "body": "Things aren't going well at all with mom today. She is just a limp noodle and wants to sleep all the time. I sure hope that things get better soon.",
       "postId": 31,
-      "reactions": {
-        "likes": 200,
-        "dislikes": 12
-      },
+      "likes": 200,
+      "dislikes": 12,
+     
       "user": {
         "id": 168,
         "username": "lunah",
@@ -439,10 +392,8 @@ export const Posts = [
       "title": "His mother had always taught him",
       "body": "His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.",
       "postId": 126,
-      "reactions": {
-        "likes": 182,
-        "dislikes": 17
-      },
+      "likes": 182,
+      "dislikes": 17,
       "user": {
         "id": 89,
         "username": "braydenf",
