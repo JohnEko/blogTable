@@ -211,7 +211,6 @@ export const Posts = [
     },
     {
       "id": 15,
-      "id": 16,
       "title": "There was only one way to do things in the Statton house.",
       "body": "There was only one way to do things in the Statton house. That one way was to do exactly what the father, Charlie, demanded. He made the decisions and everyone else followed without question. That was until today.",
       "postId": 6,
@@ -450,6 +449,4 @@ export const Posts = [
         "fullName": "Brayden Fleming"
       }
     }
-  ]
-
-  
+  ]  

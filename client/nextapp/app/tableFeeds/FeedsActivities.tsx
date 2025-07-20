@@ -33,14 +33,34 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
 }) => {
     
     const [data, setData] = useState<UserType[]>([])
+    const [isLoading, setIsLoading] = useState(true)
 
+    //the aborted function is when user click a link and before 
+    // it response the user click another link very fast
     useEffect(() =>{
-        const fetchUser = async () =>{
-        const res = await axios.get('http://localhost:8000');
-        setData(res.data)
-        }
-        fetchUser()
-    }, [])
+         const abortCount = new AbortController()
+         const fetchUser = async () => {
+            try {
+                const res = await axios.get('http://localhost:8000/');
+                if(!res.data){
+                    throw Error("could not fetch data from the resources")
+                }
+                setData(res.data);
+                setIsLoading(false);
+                
+            } catch (err) {
+                if(err === 'AbortError'){
+                    console.log('fetch aborted')
+                } else {
+                console.log(err);
+                //setError(err)
+                }
+            }
+        };
+        fetchUser();
+        return () => abortCount.abort()
+    }, []);
+
     return(
          
         <div className={styles.main}>
@@ -69,9 +89,10 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
                             <tr>
                                 {/* loop or map through all the post and title */}
                                 <td className="feed-component">
-                                    {data.map((id, title) =>(
-                                        <article key={title}>
-                                             » <Link href={`posts/{id}`}>{id.title}</Link> «
+                                    {isLoading && <div>...isLoading</div>}
+                                    {data.map((item) =>(
+                                        <article key={item.id}>
+                                             » <Link href={`/posts/${item.id}`}>{item.title}</Link> «
                                          <hr />
                                          </article>
                                     ))}
