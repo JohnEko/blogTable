@@ -58,3 +58,14 @@ th, td{
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
+.handleDelect {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  border-radius: 8px;
+  cursor: pointer;
+}

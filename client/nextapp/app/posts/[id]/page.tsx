@@ -1,9 +1,13 @@
 'use client'
+
 import Link from 'next/link'
 import "./posts.css"
 import axios from 'axios';
 import { UserType } from '@/app/tableFeeds/FeedsActivities';
-import React from 'react';
+import React, { use } from 'react';
+import CustomButton from '@/app/form/CustomeButton';
+import { useRouter } from 'next/navigation';
+
 // import { useRouter } from 'next/navigation'
 //import { useState } from 'react'
 
@@ -21,25 +25,25 @@ export type ConversationPageTypes = {
 }
 
 
-const ConversationPage =  async ({params}: {params: {id: string}}) => {
-    // const router = useRouter()
-    const id = params.id
-  
-    const response = await axios.get(`http://localhost:8000/posts/${id}`)
+const ConversationPage = async ({params}: {params: {id: string}}) => {
+    const router = useRouter()
+
+    
+    // const fetchpostParams = async () => {
+    const response = await axios.get(`http://localhost:8000/posts/${params.id}`)
     console.log(response.data)
-    // .then((response) => {
-    //     setItems(response.data)})
-    // .catch(error => console.log(error));
+    
+    
 
     //delete article with specific id
-    // const handleDelect =  () =>{
-    //     const res = await axios.delete(`http://localhost:8000/posts/${id}`)
-    //     .then((response) => {
-    //     console.log(response.data)
-    //     })
-    //     .catch(error => console.log(error));
-    //    // router.push("/")
-    // }
+    const handleDelect = () =>{
+        const response = axios.delete(`http://localhost:8000/posts/${params.id}`)
+        .then((response) => {
+        console.log(response.data)
+        })
+        .catch(error => console.log(error));
+        router.push("/")
+    }
 
 
 
@@ -76,11 +80,24 @@ const ConversationPage =  async ({params}: {params: {id: string}}) => {
                             <b id='userId'>Likes: {response.data.likes}, {" "}</b>
                             <b id='userId'>Dislikes: {response.data.likes}</b>
                             <b id='userId'> Shares: 5</b>
-                        </div>  
-                                            
-                    </td>               
+                        </div>
+                        <div>
+                            <CustomButton
+                            label='Delete'
+                            onClick={handleDelect}
+                            className='handleDelect'
+                            
+                        />
+                        </div> 
+                        {/* <div className='btn-component'>
+                         <button >Home</button> 
+                         <button>Edith</button>   
+                         <button onClick={handleDelect}>Delete</button> 
+                        </div>                     */}
+                    </td> 
+                                
                 </tr>
-                {/* <button onClick={handleDelect}>Delete</button> */}
+                
 
                 {/* Commented messages by other user or reply messages by other users */}
                 {/* <tr>
