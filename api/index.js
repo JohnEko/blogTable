@@ -54,7 +54,7 @@ app.put('/posts/:id', (req, res, next) => {
 
 //delete method
 
-app.delete('/get/:id', (req, res, next) => {
+app.delete('/posts/:id', (req, res, next) => {
     const id = parseInt(req.params.id);
     const post = posts.find((post) => post.id === id)
 

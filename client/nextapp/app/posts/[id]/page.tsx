@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 
 import Link from 'next/link'
 import "./posts.css"
@@ -6,7 +6,7 @@ import axios from 'axios';
 import { UserType } from '@/app/tableFeeds/FeedsActivities';
 import React, { use } from 'react';
 import CustomButton from '@/app/form/CustomeButton';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 // import { useRouter } from 'next/navigation'
 //import { useState } from 'react'
@@ -26,26 +26,10 @@ export type ConversationPageTypes = {
 
 
 const ConversationPage = async ({params}: {params: {id: string}}) => {
-    const router = useRouter()
-
-    
-    // const fetchpostParams = async () => {
+   
     const response = await axios.get(`http://localhost:8000/posts/${params.id}`)
     console.log(response.data)
     
-    
-
-    //delete article with specific id
-    const handleDelect = () =>{
-        const response = axios.delete(`http://localhost:8000/posts/${params.id}`)
-        .then((response) => {
-        console.log(response.data)
-        })
-        .catch(error => console.log(error));
-        router.push("/")
-    }
-
-
 
 
   return (
@@ -81,14 +65,15 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                             <b id='userId'>Dislikes: {response.data.likes}</b>
                             <b id='userId'> Shares: 5</b>
                         </div>
-                        <div>
+                        <Link href={"/delete"}>Delete</Link>
+                        {/* <div>
                             <CustomButton
                             label='Delete'
-                            onClick={handleDelect}
+                            onClick=""
                             className='handleDelect'
                             
                         />
-                        </div> 
+                        </div>  */}
                         {/* <div className='btn-component'>
                          <button >Home</button> 
                          <button>Edith</button>   

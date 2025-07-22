@@ -89,6 +89,7 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
                             <tr>
                                 {/* loop or map through all the post and title */}
                                 <td className="feed-component">
+                                    
                                     {isLoading && <div>...isLoading</div>}
                                     {data.map((item) =>(
                                         <article key={item.id}>
