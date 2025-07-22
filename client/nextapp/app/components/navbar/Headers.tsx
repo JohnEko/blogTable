@@ -63,6 +63,8 @@ const Headers = () => {
                       <SearchBar />
                 </div>
 
+                <Link href={"/create"} className='create-articles'>Create</Link>
+
                 <div className='mobile-header'>
 
                     <MobileMenu />
