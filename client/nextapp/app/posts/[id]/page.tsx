@@ -6,6 +6,8 @@ import axios from 'axios';
 import { UserType } from '@/app/tableFeeds/FeedsActivities';
 import React, { use } from 'react';
 import CustomButton from '@/app/form/CustomeButton';
+import {BsFillPencilFill} from "react-icons/bs"
+import ModalPage from '@/app/modal/page';
 // import { useRouter } from 'next/navigation';
 
 // import { useRouter } from 'next/navigation'
@@ -57,7 +59,10 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                     <td id='userId' className='user_comments'>
                         <div className='post-comment'>
                             <span className='POST-COMMENT'>{response.data.body}.</span>
-
+                            <span><BsFillPencilFill /></span>
+                            <div>
+                                <ModalPage />
+                            </div>
                         </div>
                         <div className='like'>
                             <br />
@@ -65,7 +70,25 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                             <b id='userId'>Dislikes: {response.data.likes}</b>
                             <b id='userId'> Shares: 5</b>
                         </div>
-                        <Link href={"/delete"}>Delete</Link>
+
+                        <div className='article-post'>
+                            <Link 
+                                href={"/delete"} className='handleDelete'>
+                                    Delete
+                            </Link>
+                         {/* //edit post can be news.id */}
+                             <Link 
+                                href={"/edith"}  className='handleEdith'>
+                                    Edith
+                            </Link>
+
+                        </div>
+                        {/* <div className='handleEdith'>
+                            <Link 
+                                href={"/edith"}  className='handleEdith'>
+                                    Edith
+                            </Link>
+                        </div> */}
                         {/* <div>
                             <CustomButton
                             label='Delete'
@@ -80,6 +103,7 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                          <button onClick={handleDelect}>Delete</button> 
                         </div>                     */}
                     </td> 
+                    
                                 
                 </tr>
                 

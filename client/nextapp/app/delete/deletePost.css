@@ -59,28 +59,13 @@ th, td{
   border-bottom-right-radius: 1rem;
 }
 
-.article {
-  display: flex;
-  justify-content: center; 
-  height: auto;
-  margin-bottom: 6px;
-  
-}
-
 .handleDelete {
   background: #f1356d;
   color: #fff;
   border: 0;
   padding: 8px;
+  margin-left: 25rem;
+  margin-right: 25rem;
   border-radius: 8px;
   cursor: pointer;
 }
-
-.handleEdith {
-  background: #4d743e;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-} 
