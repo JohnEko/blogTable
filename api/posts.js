@@ -7,11 +7,12 @@ export const Posts = [
       "comments": "You are absolutely right",
       "likes": 192,
       "dislikes": 25,
-      "user": {
-        "id": 105,
-        "username": "emmac",
-        "fullName": "Emma Wilson",
-      }
+      "username": "emmac",
+      "fullName": "Emma Wilson",
+      "userId": 105,
+      
+        
+      
       
     },
     {
@@ -23,11 +24,10 @@ export const Posts = [
       "views": 305,
       "likes": 192,
       "dislikes": 25,
-      "user": {
-        "id": 183,
-        "username": "cameronp",
-        "fullName": "Cameron Perez"
-      }
+      "username": "cameronp",
+      "fullName": "Emma Cameron",
+      "userId": 183,
+     
     },
     {
       "id": 3,
@@ -38,11 +38,10 @@ export const Posts = [
       "views": 305,
       "likes": 192,
       "dislikes": 25,
-      "user": {
-        "id": 1,
-        "username": "emilys",
-        "fullName": "Emily Johnson"
-      }
+      "username": "emilys",
+      "fullName": "Emma Emily",
+      "userId": 1,
+      
     },
     {
       "id": 4,
@@ -53,11 +52,10 @@ export const Posts = [
       "views": 30,
       "likes": 192,
       "dislikes": 25,
-      "user": {
-        "id": 89,
-        "username": "braydenf",
-        "fullName": "Brayden Fleming"
-      }
+      "username": "braydenf",
+      "fullName": "Brayden Emily",
+      "userId": 89,
+
     },
     {
       "id": 5,
@@ -68,11 +66,10 @@ export const Posts = [
       "views": "12",
       "likes": 19,
       "dislikes": 25,
-      "user": {
-        "id": 149,
-        "username": "wyattp",
-        "fullName": "Wyatt Perry"
-      }
+      "username": "wyattp",
+      "fullName": "Wyatt Emily",
+      "userId": 149,
+     
     },
     {
       "id": 6,
@@ -81,11 +78,10 @@ export const Posts = [
       "postId": 184,
       "likes": 92,
       "dislikes": 2,
-      "user": {
-        "id": 110,
-        "username": "danielt",
-        "fullName": "Daniel Taylor"
-      }
+      "username": "danielt",
+      "fullName": "Daniel Emily",
+      "userId": 110,
+    
     },
     {
       "id": 7,
@@ -94,11 +90,10 @@ export const Posts = [
       "postId": 172,
       "likes": 2,
       "dislikes": 1,
-      "user": {
-        "id": 4,
-        "username": "jamesd",
-        "fullName": "James Davis"
-      }
+      "username": "jamesd",
+      "fullName": "James Emily",
+      "userId": 4,
+
     },
     {
       "id": 8,
@@ -107,11 +102,10 @@ export const Posts = [
       "postId": 233,
       "likes": 102,
       "dislikes": 5,
-      "user": {
-        "id": 145,
-        "username": "lukec",
-        "fullName": "Luke Cooper"
-      }
+      "username": "lukec",
+      "fullName": "Luke Emily",
+      "userId": 145,
+
     },
     {
       "id": 9,
@@ -120,11 +114,11 @@ export const Posts = [
       "postId": 207,
        "likes": 12,
       "dislikes": 2,
-      "user": {
-        "id": 207,
-        "username": "jaces",
-        "fullName": "Jace Smith"
-      }
+      "username": "jaces",
+      "fullName": "Jace Emily",
+      "userId": 207,
+
+  
     },
     {
       "id": 10,
@@ -133,11 +127,10 @@ export const Posts = [
       "postId": 87,
       "likes": 9,
       "dislikes": 1,
-      "user": {
-        "id": 86,
-        "username": "noram",
-        "fullName": "Nora Mills"
-      }
+      "username": "noram",
+      "fullName": "Nora Emily",
+      "userId": 86,
+      
     },
     {
       "id": 11,
@@ -146,11 +139,10 @@ export const Posts = [
       "postId": 156,
      "likes": 195,
       "dislikes": 3,
-      "user": {
-        "id": 162,
-        "username": "mateob",
-        "fullName": "Mateo Bennett"
-      }
+      "username": "mateob",
+      "fullName": "Nora Mateo",
+      "userId": 162,
+     
     },
     {
       "id": 12,
@@ -159,11 +151,10 @@ export const Posts = [
       "postId": 119,
       "likes": 10,
       "dislikes": 1,
-      "user": {
-        "id": 90,
-        "username": "scarlettb",
-        "fullName": "Scarlett Bowman"
-      }
+      "username": "mascarlettbteob",
+      "fullName": "Scarlett Mateo",
+      "userId": 90,
+      
     },
     {
       "id": 13,
@@ -172,11 +163,10 @@ export const Posts = [
       "postId": 108,
       "likes": 1920,
       "dislikes": 25,
-      "user": {
-        "id": 87,
-        "username": "hunterg",
-        "fullName": "Hunter Gordon"
-      }
+     "username": "hunterg",
+      "fullName": "Hunter Mateo",
+      "userId": 87,
+      
     },
     {
       "id": 14,
@@ -185,11 +175,10 @@ export const Posts = [
       "postId": 20,
       "likes": 8,
       "dislikes": 2,
-      "user": {
-        "id": 77,
-        "username": "jonathanp",
-        "fullName": "Jonathan Pierce"
-      }
+      "username": "jonathanp",
+      "fullName": "Jonathan Mateo",
+      "userId": 77,
+    
     },
     {
       "id": 15,
@@ -198,11 +187,10 @@ export const Posts = [
       "postId": 6,
       "likes": 40,
       "dislikes": 4,
-      "user": {
-        "id": 17,
-        "username": "evelyns",
-        "fullName": "Evelyn Sanchez"
-      }
+      "username": "evelyns",
+      "fullName": "Evelyn Mateo",
+      "userId": 17,
+      
     },
     {
       "id": 16,
@@ -211,11 +199,9 @@ export const Posts = [
       "postId": 14,
      "likes": 5,
       "dislikes": 1,
-      "user": {
-        "id": 199,
-        "username": "viviang",
-        "fullName": "Vivian Carter"
-      }
+      "username": "viviang",
+      "fullName": "Vivian Mateo",
+      "userId": 199,
     },
     {
       "id": 17,
@@ -224,11 +210,9 @@ export const Posts = [
       "postId": 240,
      "likes": 72,
       "dislikes": 8,
-      "user": {
-        "id": 155,
-        "username": "nicholase",
-        "fullName": "Nicholas Edwards"
-      }
+      "username": "nicholase",
+      "fullName": "Nicholas Mateo",
+      "userId": 155,
     },
     {
       "id": 18,
@@ -237,11 +221,10 @@ export const Posts = [
       "postId": 227,
       "likes": 12,
       "dislikes": 1,
-      "user": {
-        "id": 134,
-        "username": "noramx",
-        "fullName": "Nora Russell"
-      }
+      "username": "noramx",
+      "fullName": "Nora Mateo",
+      "userId": 134,
+      
     },
     {
       "id": 19,
@@ -250,11 +233,10 @@ export const Posts = [
       "postId": 245,
       "likes": 450,
       "dislikes": 23,
-      "user": {
-        "id": 203,
-        "username": "novab",
-        "fullName": "Nova Cooper"
-      }
+      "username": "novab",
+      "fullName": "Nora Nova",
+      "userId": 203,
+     
     },
     {
       "id": 20,
@@ -263,11 +245,10 @@ export const Posts = [
       "postId": 176,
       "likes": 55,
       "dislikes": 4,
-      "user": {
-        "id": 39,
-        "username": "lucasg",
-        "fullName": "Lucas Gray"
-      }
+      "username": "lucasg",
+      "fullName": "Nora Lucas",
+      "userId": 39,
+     
     },
     {
       "id": 21,
@@ -276,11 +257,9 @@ export const Posts = [
       "postId": 229,
       "likes": 5,
       "dislikes": 0,
-      "user": {
-        "id": 113,
-        "username": "miam",
-        "fullName": "Mia Miller"
-      }
+      "username": "miam",
+      "fullName": "Nora Mia",
+      "userId": 113,
     },
     {
       "id": 22,
@@ -288,12 +267,12 @@ export const Posts = [
       "body": "It's an unfortunate reality that we don't teach people how to make money (beyond getting a 9 to 5 job) as part of our education system. The truth is there are a lot of different, legitimate ways to make money. That doesn't mean they are easy and that you won't have to work hard to succeed, but it does mean that if you're willing to open your mind a bit you don't have to be stuck in an office from 9 to 5 for the next fifty years o your life.",
       "postId": 9,
       "likes": 2,
-      "dislikes": 0,
-      "user": {
-        "id": 113,
-        "username": "miam",
-        "fullName": "Mia Miller"
-      }
+      "dislikes": 1,
+      "username": "miam",
+      "fullName": "Nora Mia",
+      "userId": 1123,
+     
+     
     },
     {
       "id": 23,
@@ -302,11 +281,10 @@ export const Posts = [
       "postId": 33,
       "likes": 1,
       "dislikes": 0,
-      "user": {
-        "id": 155,
-        "username": "nicholase",
-        "fullName": "Nicholas Edwards"
-      }
+      "username": "nicholase",
+      "fullName": "Nora Nicholas",
+      "userId": 155,
+      
     },
     {
       "id": 24,
@@ -315,11 +293,10 @@ export const Posts = [
       "postId": 121,
       "likes": 68,
       "dislikes": 7,
-      "user": {
-        "id": 169,
-        "username": "jaxonb",
-        "fullName": "Jaxon Barnes"
-      }
+      "username": "jaxonb",
+      "fullName": "Nora Barnes",
+      "userId": 169,
+      
     },
     {
       "id": 25,
@@ -328,11 +305,10 @@ export const Posts = [
       "postId": 247,
       "likes": 72,
       "dislikes": 2,
-      "user": {
-        "id": 160,
-        "username": "claires",
-        "fullName": "Claire Foster"
-      }
+      "username": "claires",
+      "fullName": "Nora Claire",
+      "userId": 160,
+      
     },
     {
       "id": 26,
@@ -341,11 +317,10 @@ export const Posts = [
       "postId": 79,
       "likes": 70,
       "dislikes": 7,
-      "user": {
-        "id": 59,
-        "username": "ethanf",
-        "fullName": "Ethan Fletcher"
-      }
+      "username": "ethanf",
+      "fullName": "Nora Ethan",
+      "userId": 59,
+  
     },
     {
       "id": 27,
@@ -354,11 +329,10 @@ export const Posts = [
       "postId": 55,
        "likes": 92,
       "dislikes": 19,
-      "user": {
-        "id": 57,
-        "username": "nathand",
-        "fullName": "Nathan Dixon"
-      }
+      "username": "nathand",
+      "fullName": "Nora Nathan",
+      "userId": 57,
+     
     },
     {
       "id": 28,
@@ -367,11 +341,10 @@ export const Posts = [
       "postId": 209,
       "likes": 85,
       "dislikes": 8,
-      "user": {
-        "id": 177,
-        "username": "xavierw",
-        "fullName": "Xavier Wright"
-      }
+      "username": "xavierw",
+      "fullName": "Nora Wright",
+      "userId": 177,
+     
     },
     {
       "id": 29,
@@ -380,12 +353,9 @@ export const Posts = [
       "postId": 31,
       "likes": 200,
       "dislikes": 12,
-     
-      "user": {
-        "id": 168,
-        "username": "lunah",
-        "fullName": "Luna Perez"
-      }
+      "username": "lunah",
+      "fullName": "Nora Luna",
+      "userId": 168,
     },
     {
       "id": 30,
@@ -394,10 +364,9 @@ export const Posts = [
       "postId": 126,
       "likes": 182,
       "dislikes": 17,
-      "user": {
-        "id": 89,
-        "username": "braydenf",
-        "fullName": "Brayden Fleming"
-      }
+      "username": "braydenf",
+      "fullName": "Nora Brayden",
+      "userId": 89,
+      
     }
   ]  
