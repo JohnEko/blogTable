@@ -13,13 +13,16 @@ const CreatePost = () => {
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
   const [postId, setPostId] = useState('')
-  const [reaction, setReaction] = useState('')
-  const [user, setUser] = useState('')
+  const [fullName, setFulName] = useState('')
+  const [username, setUserName] = useState('')
+  const [likes, setLikes] = useState('')
+  const [dislikes, setDislikes] = useState('')
+  const [userId, setUserId] = useState('')
 
 //Posting a new article to the frontpage
   const creatForm = async (e:any) => {
     e.preventDefault()
-    const posts = {title, postId, reaction, user, body}
+    const posts = {title, postId, username, fullName, likes, dislikes, userId, body}
 
 
     console.log(posts)
@@ -61,23 +64,40 @@ const CreatePost = () => {
 
         <input type="User"  
               placeholder='User' 
-              value={user} 
-              onChange={(e) => setUser(e.target.value)}
+              value={username} 
+              onChange={(e) => setUserName(e.target.value)}
             />
 
-        <input type="Reaction"  
-              placeholder='Reaction' 
-              value={reaction} 
-              onChange={(e) => setReaction(e.target.value)}
+        <input type="Fullname"  
+              placeholder='Fullname' 
+              value={fullName} 
+              onChange={(e) => setFulName(e.target.value)}
+            />
+        <input type="Likes"  
+              placeholder='Likes' 
+              value={likes} 
+              onChange={(e) => setLikes(e.target.value)}
             />
 
-        <input type="body"  
-              placeholder='Body' 
-              value={body} 
-              onChange={(e) => setBody(e.target.value)}
+          <input type="Dislikes"  
+              placeholder='Dislikes' 
+              value={dislikes} 
+              onChange={(e) => setDislikes(e.target.value)}
             />
+
+          <input type="UserId"  
+              placeholder='UserId' 
+              value={userId} 
+              onChange={(e) => setUserId(e.target.value)}
+            />
+
+          <input type="body"  
+                placeholder='Body' 
+                value={body} 
+                onChange={(e) => setBody(e.target.value)}
+              />
            <button>Create post</button>
-
+userId
        </form>
     </div>
   )

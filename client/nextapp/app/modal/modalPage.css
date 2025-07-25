@@ -18,3 +18,10 @@
     width: 35em;
 
 }
+/* this css will be shared by the page and post.css page */
+.modal .btn{
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: .5rem;
+}
