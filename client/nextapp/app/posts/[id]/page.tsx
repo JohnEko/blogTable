@@ -1,42 +1,25 @@
-// 'use client'
+ //'use client'
 
 import Link from 'next/link'
 import "./posts.css"
 import axios from 'axios';
-import { UserType } from '@/app/tableFeeds/FeedsActivities';
-import React, { use } from 'react';
 import CustomButton from '@/app/form/CustomeButton';
 import {BsFillPencilFill} from "react-icons/bs"
 import ModalPage from '@/app/modal/page';
-// import { useRouter } from 'next/navigation';
 
-// import { useRouter } from 'next/navigation'
-//import { useState } from 'react'
-
-
-
-export type ConversationPageTypes = {
-    id: string,
-    title: string,
-    body: string,
-    postId: string,
-    reactions: string,
-    userId: string,
-    user: UserType[]
-
-}
 
 
 const ConversationPage = async ({params}: {params: {id: string}}) => {
-   
-    const response = await axios.get(`http://localhost:8000/posts/${params.id}`)
-    console.log(response.data)
-    
 
+      
+    const res = await axios.get(`http://localhost:8000/posts/${params.id}`)
+    console.log(res.data)
+       
+    
 
   return (
     <div>
-        <h2>{response.data.title}</h2>
+        <h2>{res.data.title}</h2>
         <table className='posts'>
             
             <tbody>
@@ -45,10 +28,10 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                     {/* Posted mmessage by users */}
                     <td className='bold 1 pu'>        
                         
-                        <Link href={""}><b>{response.data.title}</b>{", "}</Link>
-                        <Link href={""}>{"messageId number:"} <b>{response.data.likes}</b> </Link>
+                        <Link href={""}><b>{res.data.title}</b>{", "}</Link>
+                        <Link href={""}>{"messageId number:"} <b>{res.data.likes}</b> </Link>
                         
-                        <Link href={""}>author/UserId: {" by "} <b>{response.data.user.username}</b> </Link>
+                        <Link href={""}>author/UserId: {" by "} <b>{res.data.username}</b> </Link>
 
                         <span className='timePosted'>{"Message posted at:"} <b>8:00am</b></span>
                     </td>
@@ -58,16 +41,24 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                  <tr>
                     <td id='userId' className='user_comments'>
                         <div className='post-comment'>
-                            <span className='POST-COMMENT'>{response.data.body}.</span>
+                            <span className='POST-COMMENT'>{res.data.body}.</span>
                             <span><BsFillPencilFill /></span>
-                            <div>
-                                <ModalPage />
-                            </div>
+                            
+                            {/* when user click the edith opencil the box will open */}
+                            {/* <div>
+                                
+                                {modalOpen && ( 
+                                    <ModalPage 
+                                        closeModal={() => {
+                                            setModalOpen(false)
+                                        }}
+                                    />)}
+                            </div> */}
                         </div>
                         <div className='like'>
                             <br />
-                            <b id='userId'>Likes: {response.data.likes}, {" "}</b>
-                            <b id='userId'>Dislikes: {response.data.likes}</b>
+                            <b id='userId'>Likes: {res.data.likes}, {" "}</b>
+                            <b id='userId'>Dislikes: {res.data.likes}</b>
                             <b id='userId'> Shares: 5</b>
                         </div>
 
@@ -77,10 +68,18 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                                     Delete
                             </Link>
                          {/* //edit post can be news.id */}
-                             <Link 
+                             {/* <Link 
                                 href={"/edith"}  className='handleEdith'>
-                                    Edith
-                            </Link>
+                                    
+                            </Link> */}
+                            {/* <CustomButton 
+                                label='Add'
+                                className='btn'
+                                 onClick={() => setModalOpen(true)}
+
+                            /> */}
+                            
+                             <button className='btn'>Add</button> 
 
                         </div>
                         {/* <div className='handleEdith'>

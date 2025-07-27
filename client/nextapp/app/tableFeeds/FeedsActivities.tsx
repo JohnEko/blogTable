@@ -9,6 +9,8 @@ import apiService from "../api/apiService"
 import {PostsDetailsResponse} from "../hooks/BlogPost"
 import React, { useEffect, useState } from "react"
 import axios from 'axios'
+import ModalPage from "../modal/page"
+import CreatePost from "../create/page"
 
 
 export type UserType = {
@@ -31,9 +33,10 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
     id,
     title
 }) => {
-    
+
     const [data, setData] = useState<UserType[]>([])
     const [isLoading, setIsLoading] = useState(true)
+    const [modalOpen, setModalOpen] = useState(false)
 
     //the aborted function is when user click a link and before 
     // it response the user click another link very fast
@@ -63,7 +66,10 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
 
     return(
          
-        <div className={styles.main}>
+        <div className={styles.main}
+            // onClick={() => setModalOpen(!modalOpen)}
+        >
+            
             
             {/* lets style our table on page modules.css*/}
             <div className="item-1">
@@ -100,16 +106,28 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
                                    
                                     
                                 </td>
+
                             
                             </tr>
 
                         </tbody>
+
                     </table>
                 </div>
             </div>
             <div className="item-3">
                  <Trending />
             </div>
+            {/* <>
+                {modalOpen && ( 
+                    <CreatePost 
+                        closeModal={() => {
+                        setModalOpen(false)
+                  
+                        }}
+                />)}
+            </> */}
+
         </div>
 
     )
