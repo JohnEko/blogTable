@@ -1,47 +1,20 @@
- 'use client'
+ //'use client'
 
 import Link from 'next/link'
 import "./posts.css"
 import axios from 'axios';
-import { UserType } from '@/app/tableFeeds/FeedsActivities';
-import React, { use, useEffect, useState } from 'react';
 import CustomButton from '@/app/form/CustomeButton';
 import {BsFillPencilFill} from "react-icons/bs"
 import ModalPage from '@/app/modal/page';
-// import { useRouter } from 'next/navigation';
 
-
-
-export type ConversationPageTypes = {
-    id: string,
-    title: string,
-    body: string,
-    postId: string,
-    reactions: string,
-    userId: string,
-    user: UserType[]
-
-}
 
 
 const ConversationPage = async ({params}: {params: {id: string}}) => {
-   
-    const [data, setData] = useState<ConversationPageTypes[]>()
-    const [modalOpen, setModalOpen] = useState(false)
 
-    
-    
-     
-        const res = await axios.get(`http://localhost:8000/posts/${params.id}`)
-        console.log(res.data)
-        // .then(res =>{
-        //     setData(res.data)
-        //     console.log("New article added!")
-        //   })
-        //   .catch(error => {
-        //     console.log(error)
-        //   }) 
-    
+      
+    const res = await axios.get(`http://localhost:8000/posts/${params.id}`)
+    console.log(res.data)
+       
     
 
   return (
@@ -72,7 +45,7 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                             <span><BsFillPencilFill /></span>
                             
                             {/* when user click the edith opencil the box will open */}
-                            <div>
+                            {/* <div>
                                 
                                 {modalOpen && ( 
                                     <ModalPage 
@@ -80,7 +53,7 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                                             setModalOpen(false)
                                         }}
                                     />)}
-                            </div>
+                            </div> */}
                         </div>
                         <div className='like'>
                             <br />
@@ -99,8 +72,14 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
                                 href={"/edith"}  className='handleEdith'>
                                     
                             </Link> */}
+                            {/* <CustomButton 
+                                label='Add'
+                                className='btn'
+                                 onClick={() => setModalOpen(true)}
+
+                            /> */}
                             
-                            <button className='btn' onClick={() => setModalOpen(true)}>Add</button>
+                             <button className='btn'>Add</button> 
 
                         </div>
                         {/* <div className='handleEdith'>

@@ -6,6 +6,8 @@ import MobileMenu from './MobileMenu'
 import SearchBar from './SearchBar';
 
 const Headers = () => {
+  
+
   return (
     <header>
         <nav>

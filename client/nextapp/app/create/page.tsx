@@ -5,9 +5,16 @@ import { useState } from 'react'
 import axios from 'axios'
 import "./addForm.css"
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 
-const CreatePost = () => {
+interface CreatePostProps {
+  closeModal: () => void;
+}
+
+const CreatePost: React.FC<CreatePostProps> = ({
+  closeModal
+}) => {
 
   const router = useRouter()
   const [title, setTitle] = useState('')
@@ -46,60 +53,95 @@ const CreatePost = () => {
   }
 
   return (
-    <div className='form-data'>
-       <h1> Create new post </h1>
-       <form className='addForm'  onSubmit={creatForm}>
 
-        <input type="title"  
-              placeholder='Title' 
-              value={title} 
-              onChange={(e) => setTitle(e.target.value)}
-            />
+    <div className="modal-container"
+      // onClick={(e:any) => {
+      //   if(e.target.className === "modal-container") closeModal}}
+    >
+      <div className='form-data'>
+        <h1> Create new post </h1>
+        <form className='addForm'  onSubmit={creatForm}>
+          <div className='form-group'>
+            <label htmlFor="Title"></label>
+            <input type="title"  
+                  placeholder='Title' 
+                  value={title} 
+                  onChange={(e) => setTitle(e.target.value)}
+                />
+          </div>
 
-        <input type="postId"  
-              placeholder='PostId' 
-              value={postId} 
-              onChange={(e) => setPostId(e.target.value)}
-            />
+          <div className='form-group'>
+            <label htmlFor="PostId"></label>
+              <input type="postId"  
+                    placeholder='PostId' 
+                    value={postId} 
+                    onChange={(e) => setPostId(e.target.value)}
+                  />
+          </div>
 
-        <input type="User"  
-              placeholder='User' 
-              value={username} 
-              onChange={(e) => setUserName(e.target.value)}
-            />
 
-        <input type="Fullname"  
-              placeholder='Fullname' 
-              value={fullName} 
-              onChange={(e) => setFulName(e.target.value)}
-            />
-        <input type="Likes"  
-              placeholder='Likes' 
-              value={likes} 
-              onChange={(e) => setLikes(e.target.value)}
-            />
+          <div className='form-group'>
+              <label htmlFor="User"></label>
+                <input type="User"  
+                      placeholder='User' 
+                      value={username} 
+                      onChange={(e) => setUserName(e.target.value)}
+                    />
+          </div>
 
-          <input type="Dislikes"  
-              placeholder='Dislikes' 
-              value={dislikes} 
-              onChange={(e) => setDislikes(e.target.value)}
-            />
+          <div className='form-group'>
+            <label htmlFor="FullName"></label>
+                <input type="Fullname"  
+                      placeholder='Fullname' 
+                      value={fullName} 
+                      onChange={(e) => setFulName(e.target.value)}
+                    />
+            </div>
 
-          <input type="UserId"  
-              placeholder='UserId' 
-              value={userId} 
-              onChange={(e) => setUserId(e.target.value)}
-            />
+            <div className='form-group'>
+              <label htmlFor="Like"></label>
+                <input type="Likes"  
+                      placeholder='Likes' 
+                      value={likes} 
+                      onChange={(e) => setLikes(e.target.value)}
+                    />
+            </div>
 
-          <input type="body"  
-                placeholder='Body' 
-                value={body} 
-                onChange={(e) => setBody(e.target.value)}
+
+            <div className='form-group'>
+              <label htmlFor="Title"></label>
+                <input type="Dislikes"  
+                    placeholder='Dislikes' 
+                    value={dislikes} 
+                    onChange={(e) => setDislikes(e.target.value)}
+                  />
+            </div>
+
+            <div className='form-group'>
+            <label htmlFor="UserId"></label>
+            <input type="UserId"  
+                placeholder='UserId' 
+                value={userId} 
+                onChange={(e) => setUserId(e.target.value)}
               />
-           <button>Create post</button>
-userId
-       </form>
-    </div>
+            </div>
+
+            <div className='form-group'>
+              <label htmlFor="Body"></label>
+                <textarea name="body"  
+                      placeholder='Body' 
+                      value={body} 
+                      onChange={(e) => setBody(e.target.value)}
+                    />
+            </div>
+            <div className='form-button'>
+              <Link href={'/'}>Cancel</Link>
+              <button>Create post</button>
+            </div>
+
+        </form>
+      </div>
+  </div>
   )
 }
 

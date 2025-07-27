@@ -8,9 +8,9 @@ import CustomButton from '../form/CustomeButton'
 const ModalPage = ({closeModal}: any) => {
   return (
     <div 
-      className='modal-container' 
-      onClick={(e) => {
-        if(e.target.className === "modal-container") closeModal(); }}>
+      className="modal-container"
+      onClick={(e:any) => {
+        if(e.target.className === "modal-container") closeModal()}}>
 
         <div className='modal'>
            <form action="">
