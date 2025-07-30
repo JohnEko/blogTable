@@ -39,7 +39,6 @@ const CreatePost: React.FC<CreatePostProps> = ({
           
         }}, 
       )
-      //console.log(res.data)
           .then(res =>{
             console.log(res.data)
             console.log("New article added!")

@@ -3,29 +3,35 @@
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import "./deletePost.css"
-import CustomButton from '../form/CustomeButton';
+import CustomButton from '../../form/CustomeButton';
 import Link from 'next/link';
 
 
 // dont parse asyn on your home function
-const DeleteArticle =  ({params}: {params: {id: string}}) => {
+const DeleteArticle = async () => {
     const router = useRouter()
-    
    
+    
   
-    const handleDelete = async () => {
-      await axios.delete(`http://localhost:8000/posts/${params.id}`)
-      console.log("delete successfully")
+    const handleDelete = (id:any) => {
+      axios.delete(`http://localhost:8000/posts/${id}`)
+      // console.log(res)
+      .then(response => {
+        console.log(response)
+      })
+      .catch(error => {
+        console.log(error)
+      })
       
-       router.push("/")
+        router.push("/")
     }
    
-
+    
 
 
 return (
     <div>
-      <h1>Delete</h1>
+      <h1>{`do you really want to delete this`}</h1>
 
       <table className='posts'>
             
@@ -60,7 +66,7 @@ return (
                           <div>
                             <CustomButton 
                             label='Delete'
-                            onClick={handleDelete}
+                            onClick={(e) => handleDelete(id)}
                             className='handleDelete'
                           />
                           <span>Do you really want to delete this post</span>

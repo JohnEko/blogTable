@@ -5,7 +5,6 @@ import "./posts.css"
 import axios from 'axios';
 import CustomButton from '@/app/form/CustomeButton';
 import {BsFillPencilFill} from "react-icons/bs"
-import ModalPage from '@/app/modal/page';
 
 
 
@@ -64,7 +63,7 @@ const ConversationPage = async ({params}: {params: {id: string}}) => {
 
                         <div className='article-post'>
                             <Link 
-                                href={"/delete"} className='handleDelete'>
+                                href={`/delete/${res.data.id}`} className='handleDelete'>
                                     Delete
                             </Link>
                          {/* //edit post can be news.id */}

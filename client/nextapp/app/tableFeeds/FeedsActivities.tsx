@@ -1,16 +1,13 @@
  'use client'
 
 import Link from "next/link"
-// import { useState, useEffect } from "react"
 import styles from "./feeds.module.css"
 import Topics from "../topicsFeed/topicsActivities"
 import Trending from "../trendingFeeds/trendingActivities"
 import apiService from "../api/apiService"
-import {PostsDetailsResponse} from "../hooks/BlogPost"
 import React, { useEffect, useState } from "react"
 import axios from 'axios'
-import ModalPage from "../modal/page"
-import CreatePost from "../create/page"
+
 
 
 export type UserType = {
@@ -36,7 +33,7 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
 
     const [data, setData] = useState<UserType[]>([])
     const [isLoading, setIsLoading] = useState(true)
-    const [modalOpen, setModalOpen] = useState(false)
+   
 
     //the aborted function is when user click a link and before 
     // it response the user click another link very fast
@@ -67,7 +64,7 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
     return(
          
         <div className={styles.main}
-            // onClick={() => setModalOpen(!modalOpen)}
+           
         >
             
             
@@ -118,15 +115,6 @@ const FeedComponent: React.FC<UserArticleProps> =  ({
             <div className="item-3">
                  <Trending />
             </div>
-            {/* <>
-                {modalOpen && ( 
-                    <CreatePost 
-                        closeModal={() => {
-                        setModalOpen(false)
-                  
-                        }}
-                />)}
-            </> */}
 
         </div>
 
